@@ -45,6 +45,16 @@ h1 {
     font-weight: 500;
     color: var(--blue1);
 }
+h2 {
+    font-weight: 200;
+    color: var(--blue3);
+    margin: 0.1em 0;
+}
+h3 {
+    font-weight: 100;
+    color: var(--blue4);
+    margin: 0.1em 0;
+}
 
 b {
     font-weight: 500;
