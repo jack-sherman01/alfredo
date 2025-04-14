@@ -1,3 +1,213 @@
----
-layout: home
----
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DPH2YST3Z6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DPH2YST3Z6');
+    </script>
+
+    <title> Heng (Alfredo) Zhang </title>
+    <!-- <link rel="icon" type="image/x-icon" href="assets/images/iit"> -->
+</head>
+
+<body>
+    <div style="width:1000px;margin: 0px auto;">
+        <header id="header" width="400px" style="display:flex; justify-content: space-around; border-radius: 20px; padding: 10px; background: #076bce; color: rgb(145, 19, 19);">
+            <a href="#profile-intro" style="color: white; font-weight: bold;">Home</a>
+            <a href="#updates" style="color: white; font-weight: bold;">News</a>
+            <a href="#research" style="color: white; font-weight: bold;">Research</a>
+            <a href="#service" style="color: white; font-weight: bold;">Service</a>
+            <a href="misc.html" style="color: white; font-weight: bold;">Misc</a>
+        </header>
+        <div id="profile">
+            <div id="profile-pic">
+                <img src="assets/images/profile-image.jpg" style="width:250px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);" />
+            </div>
+            <div id="profile-intro">
+                <div id="profile-name">Heng (Alfredo) Zhang</div>
+                <div id="profile-email">heng.zhang@iit.it</div>
+                <p>
+                    <div style="text-align: justify;"></div>
+                    I am a third-year PhD student in Robotics and Intelligent Machines (DRIM) at  Italian Institute of Technology (IIT), advised by Dr. <a href="https://www.iit.it/it/people-details/-/people/arash-ajoudani">Arash Ajoudani</a>.
+                    Previously, I received a Master's degree in Control Engineering from Tongji University and a B.E degree in Automation from Northeast Electric Power University, China. 
+                    <br>
+                    
+                </p>
+                <div>
+                    <a href="assets/documents/Heng_Zhang_CV.pdf" target="_blank" id="cv">CV</a>
+                    /
+                    <a href="https://scholar.google.com.hk/citations?hl=en&pli=1&user=5KhgNnoAAAAJ" id="gscholar">GScholar</a>                      
+                    /
+                    <a href="https://www.linkedin.com/in/heng-zhang-ab3699219/">LinkedIn</a>
+                    /
+                    <a href="https://www.researchgate.net/profile/Heng-Zhang-191?ev=hdr_xprf">ResearchGate</a>
+                    /
+                    <a href="https://x.com/HengZha70061681">Twitter</a>
+                    /
+                    <a href="https://github.com/jack-sherman01">Github</a>
+                </div>
+            </div>
+
+            
+            <div style="clear: both;"></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <br>
+        <h1>About Me</h1>
+        My research focuses on robot learning, reinforcement learning. Specifically, My current research interest focuses on:
+        <ul>
+        <li> · Learning-based methods for robotic contact-rich tasks, focusing on safety issues, including safe exploration and safe execution;</li>
+        <li> · RL fine-tuning for VLA to achieve safe contact manipulation (multimodal VLA, including force-torque, vision, tactile sensing, and language processing);</li>
+        <li> · AI4Sci.</li>
+        </ul>
+        <br>
+        <div style="clear: both;"></div>
+        <div class="divider"></div> <div class="divider"></div>
+        <div class="section" id="updates">
+            <h1>News</h1>
+            <ul>
+                <li> <b>Jul 2023</b> Started summer school at ETHz in learning-based control. 
+                <li> <b>Nov 2022</b> Started PhD at iit in Robotics and Intelligent Machines (DRIM). 
+                <li> <b>Jun 2022</b> Graduated from Tongji University with Master degree as an outstanding graduate 🎓.
+            </ul>
+            <p></p>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="divider"></div>
+        <div style="display:flex;flex-direction: column;" id="research">
+            <h1>Research</h1>
+            <div>
+                <a href="" style="height: 12em;" class="research-thumb">
+                    <img src="assets/images/SRL_VIC_Y.gif" alt="SRL-VIC Animation" width="100%" style="display: block;">
+                </a>
+                <a href="" class="research-proj-title">
+                    SRL-VIC: A variable stiffness-based safe reinforcement learning for contact-rich robotic tasks
+                </a>
+                <p>
+                    <b>Heng Zhang</b>,
+                    <a style="color:#000;" href="https://scholar.google.co.uk/citations?user=yuOV2TQAAAAJ&hl=tr">Gokhan Solak</a>,
+                    <a style="color:#000;" href="https://scholar.google.com.br/citations?user=dmGqrDYAAAAJ&hl=en/">Gustavo JG Lahr</a>,
+                    <a style="color:#000;" href="https://www.iit.it/it/people-details/-/people/arash-ajoudani">Arash Ajoudani</a>
+                    <br>IEEE Robotics and Automation Letters (RA-L), 2024<br>
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10517611">Paper</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                    <a href="https://www.youtube.com/watch?v=ksWXR3vByoQ">Video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                </p>
+                <br>
+                <p>
+                    Exploration Policy with Safety and Generalization in contact-rich tasks using Safe Reinforcement Learning and VIC.
+                </p>
+            </div>
+
+            <div>
+                <a href="" style="height: 12em;" class="research-thumb">
+                    <img src="assets/images/passiveRL_right_corner3.gif" alt="passiveRL Animation" width="100%" style="display: block;">
+                </a>
+                <a href="" class="research-proj-title">
+                    Towards Passive Safe Reinforcement Learning: A Comparative Study on Contact-rich Robotic Manipulation
+                </a>
+                <p>
+                    <b>Heng Zhang</b>,
+                    <a style="color:#000;" href="https://scholar.google.co.uk/citations?user=yuOV2TQAAAAJ&hl=tr">Gokhan Solak</a>,
+                    <a style="color:#000;" href="https://scholar.google.com/citations?user=8kn7Z9QAAAAJ&hl=en&oi=ao">Sebastian Hjorth</a>,
+                    <a style="color:#000;" href="https://www.iit.it/it/people-details/-/people/arash-ajoudani">Arash Ajoudani</a>
+                    <br>IEEE Robotics and Automation Letters (RA-L) under review<br>
+                    <a href="https://arxiv.org/abs/2503.00287">Paper</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                    <a href="https://huggingface.co/papers/2503.00287">Hugging Face</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                </p>
+                <br>
+                <p>
+                Learning to be safe and stable both in training and deployment in real world.
+                </p>
+            </div>
+
+            <div>
+                <a href="https://jack-sherman01.github.io/Bresa/" style="height: 12em;" class="research-thumb">
+                    <img src="assets/images/Bresa_framework.jpg" alt="Bresa" width="100%" style="display: block;">
+                </a>
+                <a href="https://jack-sherman01.github.io/Bresa/" class="research-proj-title">
+                    Bresa: Bio-inspired Reflexive Safe Reinforcement Learning for Contact-Rich Robotic Tasks
+                </a>
+                <p>
+                    <b>Heng Zhang</b>,
+                    <a style="color:#000;" href="https://scholar.google.co.uk/citations?user=yuOV2TQAAAAJ&hl=tr">Gokhan Solak</a>,
+                    <a style="color:#000;" href="https://www.iit.it/it/people-details/-/people/arash-ajoudani">Arash Ajoudani</a>，
+                    <br>IEEE Robotics and Automation Letters (RA-L) under review<br>
+                    <a href="https://arxiv.org/abs/2503.21989">Paper</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                    <!-- <a href="https://huggingface.co/papers/2503.00287">Hugging Face</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp; -->
+                    <a href="https://jack-sherman01.github.io/Bresa">Website</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                    <a href="https://youtu.be/fWKhCDTcqzs">Video</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                </p>
+                <br>
+                <p>
+                    A Bio-inspired Reflexive Hierarchical Safe RL method inspired by biological reflexes operating at a higher frequency than the task solver.
+                </p>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <div>
+                <a href="https://arxiv.org/abs/2503.22444" style="height: 12em;" class="research-thumb">
+                    <img src="assets/images/ags_brain.jpg" alt="AGS" width="100%" style="display: block;">
+                </a>
+                <a href="https://arxiv.org/abs/2503.22444" class="research-proj-title">
+                    Scaling Laws in Scientific Discovery with AI and Robot Scientists
+                </a>
+                <p>
+                    <a style="color:#000;" href="https://universea.github.io/">Pengsong Zhang*</a>,
+                    <b>Heng Zhang*</b>,
+                    <a style="color:#000;" href="http://hxu.rocks/publication.html/">Huazhe Xu</a>,
+                    <a style="color:#000;" href="http:/">Renjun Xu</a>,
+                    <a style="color:#000;" href="https://zhentingwang.github.io/">Zhenting Wang</a>, Cong Wang,
+                    <a style="color:#000;" href="https://animesh.garg.tech/">Animesh Garg</a>, Zhibin Li,
+                    <a style="color:#000;" href="https://www.iit.it/it/people-details/-/people/arash-ajoudani">Arash Ajoudani</a>,
+                    <a style="color:#000;" href="https://www.mie.utoronto.ca/faculty_staff/xinyu-liu/">Xinyu Liu</a>,
+                    * equal contribution,
+                    
+                    <br>Nature Machine Intelligence in submission <br>
+                    <a href="https://arxiv.org/abs/2503.22444">Paper</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                    <a href="https://huggingface.co/papers/2503.22444">Hugging Face</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                    <a href="https://github.com/openags/Awesome-AI-Scientist-Papers">Github</a>
+                </p>
+                <br>
+                <p>
+                    Autonomous Generalist Scientist (AGS) combines agentic AI and embodied robotics to automate the entire research lifecycle.
+                </p>
+            </div>
+
+
+            <div style="clear: both;"></div>
+        </div>
+        <div>
+            <p>
+                * equal contribution.
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="section" id="service">
+            <h1>Service</h1>
+            <ul>
+                <li> Co-organizer of <a href="https://jack-sherman01.github.io/AIRobot4Sci/">IROS 2025 1st Workshop on Embodied AI and Robotics for Future Scientific Discovery</a></li>
+                <li> Reviewer of IEEE TCDS, RA-L, IROS, RO-MAN, CAC, etc.
+            </ul><br>
+            <p></p>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
