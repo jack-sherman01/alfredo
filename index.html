@@ -237,99 +237,21 @@
             <div style="clear: both;"></div>
         </div>
     </div>
-    <div id="visitor-section" style="margin: 10px 0; text-align: center; font-size: 0.8em;">
-        <p>Total visitors: <span id="visitor-count">684</span></p>
-        <script>
-            // Define a variable to store the total visitor count.
-            var visitorCount = 0;
+    <!-- Add this code where you want the counter to appear -->
+    <!-- <div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-49BcxC1Zy9yZbD1C-36.gif' border='0' alt='conter12'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=49BcxC1Zy9yZbD1C'></script></div> -->
 
-            // Fetch the actual count from CountAPI and update the variable and DOM.
-            fetch('https://api.countapi.xyz/hit/heng-alfredo/visitors')
-                .then(response => response.json())
-                .then(data => {
-                    visitorCount = data.value;
-                    document.getElementById('visitor-count').innerText = visitorCount;
-                })
-                .catch(err => console.error('CountAPI error:', err));
-        </script>
-    </div>
-
-    <div id="map" style="height: 150px; margin: 10px auto; max-width: 400px;"></div>
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-    <script>
-    // Increment and get visitor count using CountAPI
-    fetch('https://api.countapi.xyz/hit/heng-alfredo/visitors')
-        .then(response => response.json())
-        .then(data => {
-            // Replace "Loading..." (default 0) with the fetched visitor count.
-            document.getElementById('visitor-count').innerText = data.value;
-        })
-        .catch(err => console.error('CountAPI error:', err));
-
-    // Utility function to add red circle markers for visitors on the map from visitor data
-    function addVisitorMarkers(map, locations) {
-        locations.forEach(loc => {
-            // Create a red circle marker for each visitor location
-            L.circleMarker([loc.latitude, loc.longitude], {
-                radius: 6,
-                color: 'red',
-                fillColor: '#f03',
-                fillOpacity: 0.8
-            }).addTo(map)
-             .bindPopup('Visitor from: ' + loc.city + ', ' + loc.country_name);
-        });
-    }
-
-    // Get current visitor location using ipapi
-    fetch('https://ipapi.co/json/')
-        .then(response => response.json())
-        .then(currentData => {
-            // Simulate registering current visitor location on your backend.
-            // Replace the URL with your actual backend endpoint to store visitor info.
-            fetch('https://api.example.com/registerVisitor', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    latitude: currentData.latitude,
-                    longitude: currentData.longitude,
-                    city: currentData.city,
-                    country_name: currentData.country_name
-                })
-            }).catch(err => console.error('Register visitor error:', err));
-
-            // Create a map centered near the current visitor location
-            var map = L.map('map').setView([currentData.latitude, currentData.longitude], 2);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; OpenStreetMap contributors'
-            }).addTo(map);
-
-            // Mark the current visitor's location with a blue circle marker for clarity
-            L.circleMarker([currentData.latitude, currentData.longitude], {
-                radius: 6,
-                color: 'blue',
-                fillColor: '#03f',
-                fillOpacity: 0.8
-            }).addTo(map)
-                .bindPopup('You are here: ' +  currentData.country_name)
-                .openPopup();
-
-            // Fetch aggregated visitor locations from your backend.
-            // Replace the URL with your actual endpoint that returns visitor locations as an array.
-            fetch('https://api.example.com/getVisitorLocations')
-                .then(response => response.json())
-                .then(data => {
-                    // Expect data.locations to be an array of locations with latitude, longitude, city, and country_name.
-                    addVisitorMarkers(map, data.locations);
-                })
-                .catch(err => console.error('Visitor locations fetch error:', err));
-        })
-        .catch(err => console.error('ipapi error:', err));
-    </script>
+    <footer class="container footer">
+        <div class="row">
+            <div class="text-center">
+                © Last update: 04.2025, Alfredo &nbsp;&nbsp;&nbsp;&nbsp;
+                Visitor Number:
+                <a href='https://www.counter12.com'><img
+                        src='https://www.counter12.com/img-49BcxC1Zy9yZbD1C-36.gif'
+                        border='0' alt='counter'></a>
+                        <script type='text/javascript' src='https://www.counter12.com/ad.js?id=49BcxC1Zy9yZbD1C'></script>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
